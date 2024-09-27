@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px; /* Aumentado o padding para melhorar a usabilidade */
+    border: 2px solid #6a11cb;
+    border-radius: 8px;
+    transition: border 0.3s ease;
+    font-size: 16px; /* Adicionado para uniformidade com o botão */
+    box-sizing: border-box; /* Para garantir que o padding não afete a largura total */
+}
+
+input[type="number"]:focus {
+    border-color: #2575fc;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2575fc;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1d5bb8;
+}
+
+.resultado {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+select {
+    width: 100%;
+    padding: 12px; /* Espaçamento interno */
+    border: 2px solid #6a11cb; /* Borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: #fff; /* Fundo branco */
+    color: #333; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    appearance: none; /* Remove o estilo padrão do navegador */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="%236a11cb" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4H4z"/></svg>'); /* Adiciona uma seta personalizada */
+    background-repeat: no-repeat; /* Não repetir a imagem */
+    background-position: right 10px center; /* Posição da seta */
+    background-size: 12px; /* Tamanho da seta */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: border-color 0.3s ease; /* Animação para mudança de borda */
+}
+
+select:focus {
+    border-color: #2575fc; /* Cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+option {
+    padding: 10px; /* Espaçamento interno */
+    background-color: #fff; /* Fundo branco */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para quando o option está selecionado */
+option:checked {
+    background-color: #6a11cb; /* Fundo ao selecionar */
+    color: #fff; /* Cor do texto ao selecionar */
+}
